@@ -6,7 +6,7 @@ import sys
 import os
 
 def process_text(text):
-    text = text.replace(':', 'colon')
+    text = text.replace(':3', 'colon3')
     return text
 
 class PlainTextEditWithEnter(QPlainTextEdit):
@@ -58,9 +58,6 @@ class MainWindow(QWidget):
             tts.save('./out/message.mp3')
             os.system('paplay ./out/message.mp3 --device=mix-for-virtual-mic')
             self.textEdit.clear()
-
-            # Exit the application after speaking text
-            QApplication.quit()
 
 def show_text_box():
     app = QApplication(sys.argv)

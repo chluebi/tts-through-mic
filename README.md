@@ -1,6 +1,8 @@
 # tts-through-mic
 Attempt to make a quick utility software which allows me to pipe TTS into a virtual microphone
 
+Heavily inspired by [this video](https://youtu.be/qkNP2KveLVE).
+
 # Requirements
 - Using pulseaudio on your device
 - Dependencies (see nix-shell file for easy usage)

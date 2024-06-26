@@ -31,6 +31,9 @@ class MainWindow(QWidget):
         self.reset_button = QPushButton('Initialise/Reset', self)
         self.reset_button.clicked.connect(self.reset)
 
+        self.remove_button = QPushButton('Remove Virtual Devices', self)
+        self.remove_button.clicked.connect(self.unload_modules)
+
 
         self.textEdit = PlainTextEditWithEnter(self)
         self.textEdit.setPlaceholderText('Type something...')
@@ -42,6 +45,7 @@ class MainWindow(QWidget):
 
         layout = QVBoxLayout()
         layout.addWidget(self.reset_button)
+        layout.addWidget(self.remove_button)
         layout.addWidget(self.textEdit)
         layout.addWidget(self.button)
         self.setLayout(layout)

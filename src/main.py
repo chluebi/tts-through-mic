@@ -54,7 +54,7 @@ class MainWindow(QWidget):
         exitShortcut.activated.connect(self.exit_app)
 
         app = QApplication.instance()
-        app.aboutToQuit.connect(self.unload_modules)
+        # app.aboutToQuit.connect(self.unload_modules)
 
     def exit_app(self):
         # Clean up and exit the application

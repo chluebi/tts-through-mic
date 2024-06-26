@@ -4,7 +4,7 @@ pactl load-module module-null-sink \
 
 pactl load-module module-pipe-source \
    source_name=virtmic \
-   file=/home/pyle/dev/virtmic format=s16le rate=16000 channels=1
+   file=$HOME/dev/virtmic format=s16le rate=16000 channels=1
 
 pactl load-module module-combine-sink \
    sink_name=virtual-microphone-and-speakers \
